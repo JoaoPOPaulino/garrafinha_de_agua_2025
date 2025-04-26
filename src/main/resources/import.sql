@@ -1,6 +1,5 @@
--- This file allow to write SQL commands that will be emitted in test and dev.
--- The commands are commented as their support depends of the database
--- insert into myentity (id, field) values(1, 'field-1');
--- insert into myentity (id, field) values(2, 'field-2');
--- insert into myentity (id, field) values(3, 'field-3');
--- alter sequence myentity_seq restart with 4;
+INSERT INTO marca (nome, cnpj) VALUES ('Marca 1', '12345678000195');
+INSERT INTO marca (nome, cnpj) VALUES ('Marca 2', '12345678000196');
+INSERT INTO marca (nome, cnpj) VALUES ('Marca 3', '12345678000197');
+INSERT INTO marca (nome, cnpj) VALUES ('Marca 4', '12345678000198');
+INSERT INTO marca (nome, cnpj) VALUES ('Marca 5', '12345678000199');
