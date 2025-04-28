@@ -1,6 +1,7 @@
 package topicos1.br.model.usuario;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Embedded; // Importe Embedded
 import topicos1.br.model.DefaultEntity;
 
 @Entity
@@ -9,7 +10,10 @@ public class Usuario extends DefaultEntity {
     private String nome;
     private String email;
     private String senha;
+
+    @Embedded  // Adicione isto
     private Telefone telefone;
+
     private Endereco endereco;
 
     public Usuario() {

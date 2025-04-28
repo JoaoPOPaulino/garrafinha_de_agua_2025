@@ -36,5 +36,4 @@ public class Marca extends DefaultEntity {
     public void setCNPJ(String CNPJ) {
         this.CNPJ = CNPJ;
     }
-
 }

@@ -1,8 +1,8 @@
 package topicos1.br.model.garrafa;
 
 import java.math.BigDecimal;
-
 import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToOne; // Importe ManyToOne
 import topicos1.br.model.DefaultEntity;
 
 @Entity
@@ -15,6 +15,8 @@ public class Garrafa extends DefaultEntity {
     private Categoria categoria;
     private Integer quantidadeEstoque;
     private String imagemUrl;
+
+    @ManyToOne  // Adicione esta anotação
     private Marca marca;
 
     public Garrafa() {
@@ -31,7 +33,6 @@ public class Garrafa extends DefaultEntity {
         this.quantidadeEstoque = quantidadeEstoque;
         this.imagemUrl = imagemUrl;
         this.marca = marca;
-
     }
 
     public String getCor() {
@@ -97,5 +98,4 @@ public class Garrafa extends DefaultEntity {
     public void setMarca(Marca marca) {
         this.marca = marca;
     }
-
 }
